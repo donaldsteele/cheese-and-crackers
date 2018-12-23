@@ -19,7 +19,6 @@ Public Class PasswordChange
     End Function
 
     Function AddUserList(UserList As ArrayList) As Object Implements IPlugin.AddUserList
-
         Dim uc As UserControl1 = Me.Instance()
         uc.LoadUsers(UserList)
     End Function

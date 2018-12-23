@@ -2,9 +2,10 @@
 Imports System.Drawing
 Imports System.Windows.Forms
 Imports System.Linq
+Imports System.ComponentModel
 
 Public Class CheckedListBoxColorable
-    Inherits FlowLayoutPanel
+    Inherits Panel
     Private _itemsList As ItemsList
     ' Public Property Colors As Dictionary(Of Object, Color)
     Public Property Striped As Boolean
@@ -12,10 +13,24 @@ Public Class CheckedListBoxColorable
     Public Property Items As ItemsList
 
     Public Sub New()
+        MyBase.New()
+        InitializeComponent()
         Me.DoubleBuffered = True
         Me.Items = New ItemsList(Me)
+        'Me.WrapContents = False
+        Me.AutoScroll = True
+
+        '   Me.FlowDirection = FlowDirection.TopDown
 
     End Sub
+    Private Sub InitializeComponent()
+        Me.SuspendLayout()
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        '  Me.WrapContents = False
+        Me.ResumeLayout(False)
+    End Sub
+
+
 
 
     'Private Function PerceivedBrightness(ByVal c As Color) As Integer
@@ -28,27 +43,13 @@ Public Class CheckedListBoxColorable
 
     'End Function
 
-    Private Sub CheckedListBoxColorable_ControlAdded(sender As Object, e As ControlEventArgs) Handles Me.ControlAdded
-
-    End Sub
-
-    Private Sub CheckedListBoxColorable_ControlRemoved(sender As Object, e As ControlEventArgs) Handles Me.ControlRemoved
-
-    End Sub
-
-    Private Sub ItemsList_ItemAdded(Index As Integer)
-
-    End Sub
-    Private Sub ItemsList_ItemRemoved(ByVal Index As Integer)
-
-    End Sub
 
     Public Class ItemsList
         Inherits List(Of MaterialSkin.Controls.MaterialCheckBox)
-        Private _parent As FlowLayoutPanel
+        Private _parent As Panel
 
 
-        Public Sub New(parent As FlowLayoutPanel)
+        Public Sub New(parent As Panel)
             _parent = parent
         End Sub
 
@@ -64,13 +65,13 @@ Public Class CheckedListBoxColorable
             Dim cb As New MaterialSkin.Controls.MaterialCheckBox
             cb.Checked = checked
             cb.Text = text
-            cb.Width = _parent.Width * 0.75
+            '    cb.Width = _parent.Width * 0.75
             Add(cb)
         End Function
 
         Public Overloads Function Add(ByVal value As MaterialSkin.Controls.MaterialCheckBox) As Integer
 
-
+            value.Dock = DockStyle.Bottom
             MyBase.Add(value)
             _parent.Controls.Add(value)
         End Function

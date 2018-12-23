@@ -71,7 +71,6 @@
     <Compile Include="CheckedListBoxColorable.vb">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="CheckedListBoxColorableListItem.vb" />
     <Compile Include="IPlugin.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

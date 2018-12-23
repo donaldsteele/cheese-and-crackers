@@ -144,9 +144,9 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim ms As New MediaPlayer
-        Dim b As New splash
-        b.Show()
-        ms.Play()
+        ' Dim b As New splash
+        ' b.Show()
+        ' ms.Play()
     End Sub
 
     Private Sub treeView1_AfterSelect(sender As Object, e As TreeViewEventArgs) Handles treeView1.AfterSelect
