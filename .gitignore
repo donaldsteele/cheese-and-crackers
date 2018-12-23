@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/localuser/v15
+/localuser/bin
+/localuser/obj/Debug
+/packages/MaterialSkin.Updated.0.2.2
+/UserManager/bin
+/UserManager/obj
+/PluginContracts/bin/Debug
+/MassPasswordChanger/obj/Debug
+/PluginContracts/obj/Debug
+/UserManagerUI/.vs/UserManagerUI/v15
+/UserManagerUI/bin/Debug
+/UserManagerUI/FakesAssemblies
+/UserManagerUI/obj/Debug
