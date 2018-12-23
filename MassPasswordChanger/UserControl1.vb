@@ -3,6 +3,8 @@ Imports MaterialSkin.Controls
 
 Public Class UserControl1
     Private Sub UserControl1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        '  Me.TextBox1.BackColor = Me.MaterialSingleLineTextField1.BackColor
+        '   Me.TextBox1.Font = Me.MaterialSingleLineTextField1.Font
 
     End Sub
 
@@ -17,9 +19,11 @@ Public Class UserControl1
             ' c.Width = FlowLayoutPanel1.Width * 0.75
             ' FlowLayoutPanel1.Controls.Add(c)
             ' Dim b As New PluginContracts.CheckedListBoxColorableListItem(u)
-            CheckedListBoxColorable1.Items.Add(u, True)
+            MaterialCheckedListBox1.Items.Add(u, True)
         Next
     End Function
 
+    Private Sub CheckedListBoxColorable1_Paint(sender As Object, e As PaintEventArgs)
 
+    End Sub
 End Class
