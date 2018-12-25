@@ -4,12 +4,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UserManagerUI", "UserManagerUI\UserManagerUI.vbproj", "{79B15C2D-EAD1-4BD2-9229-6E70231D2C9F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{11D1B478-64B7-429E-9E62-79DB104FCD27} = {11D1B478-64B7-429E-9E62-79DB104FCD27}
+		{7E7641BE-FC73-4427-82B3-7459D1587D70} = {7E7641BE-FC73-4427-82B3-7459D1587D70}
+	EndProjectSection
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PluginContracts", "PluginContracts\PluginContracts.vbproj", "{B481F785-83E5-420B-A2F4-6C194A5A9177}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MassPasswordChanger", "MassPasswordChanger\MassPasswordChanger.vbproj", "{7E7641BE-FC73-4427-82B3-7459D1587D70}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialSkin", "MaterialSkin\MaterialSkin\MaterialSkin.csproj", "{8EB7611B-68CD-4B8B-987A-11717E2B250C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GroupManager", "GroupManager\GroupManager.vbproj", "{11D1B478-64B7-429E-9E62-79DB104FCD27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,14 @@ Global
 		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Release|x86.ActiveCfg = Release|Any CPU
 		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Release|x86.Build.0 = Release|Any CPU
+		{11D1B478-64B7-429E-9E62-79DB104FCD27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D1B478-64B7-429E-9E62-79DB104FCD27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D1B478-64B7-429E-9E62-79DB104FCD27}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{11D1B478-64B7-429E-9E62-79DB104FCD27}.Debug|x86.Build.0 = Debug|Any CPU
+		{11D1B478-64B7-429E-9E62-79DB104FCD27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D1B478-64B7-429E-9E62-79DB104FCD27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11D1B478-64B7-429E-9E62-79DB104FCD27}.Release|x86.ActiveCfg = Release|Any CPU
+		{11D1B478-64B7-429E-9E62-79DB104FCD27}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

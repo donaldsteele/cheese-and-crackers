@@ -1,0 +1,12 @@
+Z:\GIT\cheese-and-crackers\UserManagerUI\bin\Debug\Plugins\GroupManager.dll
+Z:\GIT\cheese-and-crackers\UserManagerUI\bin\Debug\Plugins\GroupManager.pdb
+Z:\GIT\cheese-and-crackers\UserManagerUI\bin\Debug\Plugins\GroupManager.xml
+Z:\GIT\cheese-and-crackers\GroupManager\obj\Debug\GroupManager.vbprojAssemblyReference.cache
+Z:\GIT\cheese-and-crackers\GroupManager\obj\Debug\GroupManager.Resources.resources
+Z:\GIT\cheese-and-crackers\GroupManager\obj\Debug\GroupManager.UserControl1.resources
+Z:\GIT\cheese-and-crackers\GroupManager\obj\Debug\GroupManager.vbproj.GenerateResource.cache
+Z:\GIT\cheese-and-crackers\GroupManager\obj\Debug\GroupManager.vbproj.CoreCompileInputs.cache
+Z:\GIT\cheese-and-crackers\GroupManager\obj\Debug\GroupManager.vbproj.CopyComplete
+Z:\GIT\cheese-and-crackers\GroupManager\obj\Debug\GroupManager.dll
+Z:\GIT\cheese-and-crackers\GroupManager\obj\Debug\GroupManager.xml
+Z:\GIT\cheese-and-crackers\GroupManager\obj\Debug\GroupManager.pdb
