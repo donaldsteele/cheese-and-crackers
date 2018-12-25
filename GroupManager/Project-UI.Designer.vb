@@ -25,7 +25,6 @@ Partial Class UserControl1
         'MaterialComboBox1
         '
         Me.MaterialComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.MaterialComboBox1.ButtonColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.MaterialComboBox1.Depth = 0
         Me.MaterialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.MaterialComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
