@@ -33,7 +33,7 @@ Public Class UserControl1
             Dim st As CheckState = MaterialCheckedListBox1.GetItemCheckState(i)
 
             If st = CheckState.Checked Then
-                txtScript.Text = txtScript.Text & "net user " & Chr(34) & MaterialCheckedListBox1.Items(i).ToString & Chr(34) & " " & txtPassword.Text & vbCrLf
+                txtScript.Text = txtScript.Text & "net user " & Chr(34) & MaterialCheckedListBox1.Items(i).Text & Chr(34) & " " & txtPassword.Text & vbCrLf
             End If
         Next
 

@@ -120,16 +120,15 @@ Partial Class UserControl1
         Me.txtScript.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtScript.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtScript.Depth = 0
-        Me.txtScript.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.txtScript.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.txtScript.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.txtScript.Hint = ""
         Me.txtScript.Location = New System.Drawing.Point(378, 91)
         Me.txtScript.MouseState = MaterialSkin.MouseState.HOVER
         Me.txtScript.Multiline = True
         Me.txtScript.Name = "txtScript"
-        Me.txtScript.Size = New System.Drawing.Size(254, 428)
+        Me.txtScript.Size = New System.Drawing.Size(266, 428)
         Me.txtScript.TabIndex = 8
-        Me.txtScript.Text = "Hello " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "world" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "this" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "is " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "a t" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "est"
         '
         'UserControl1
         '
