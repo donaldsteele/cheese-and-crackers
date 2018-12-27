@@ -23,9 +23,9 @@ Partial Class UserControl1
         Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialSingleLineTextField1 = New MaterialSkin.Controls.MaterialSingleLineTextField()
+        Me.txtPassword = New MaterialSkin.Controls.MaterialSingleLineTextField()
         Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialMultiLineTextField1 = New MaterialSkin.Controls.MaterialMultiLineTextField()
+        Me.txtScript = New MaterialSkin.Controls.MaterialMultiLineTextField()
         Me.SuspendLayout()
         '
         'MaterialCheckedListBox1
@@ -84,23 +84,23 @@ Partial Class UserControl1
         Me.MaterialLabel2.TabIndex = 3
         Me.MaterialLabel2.Text = "Set New Password"
         '
-        'MaterialSingleLineTextField1
+        'txtPassword
         '
-        Me.MaterialSingleLineTextField1.Depth = 0
-        Me.MaterialSingleLineTextField1.Hint = ""
-        Me.MaterialSingleLineTextField1.Location = New System.Drawing.Point(21, 571)
-        Me.MaterialSingleLineTextField1.MaxLength = 32767
-        Me.MaterialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialSingleLineTextField1.Name = "MaterialSingleLineTextField1"
-        Me.MaterialSingleLineTextField1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialSingleLineTextField1.SelectedText = ""
-        Me.MaterialSingleLineTextField1.SelectionLength = 0
-        Me.MaterialSingleLineTextField1.SelectionStart = 0
-        Me.MaterialSingleLineTextField1.Size = New System.Drawing.Size(291, 23)
-        Me.MaterialSingleLineTextField1.TabIndex = 2
-        Me.MaterialSingleLineTextField1.TabStop = False
-        Me.MaterialSingleLineTextField1.Text = "Cyb3rPatr1ot!"
-        Me.MaterialSingleLineTextField1.UseSystemPasswordChar = False
+        Me.txtPassword.Depth = 0
+        Me.txtPassword.Hint = ""
+        Me.txtPassword.Location = New System.Drawing.Point(21, 571)
+        Me.txtPassword.MaxLength = 32767
+        Me.txtPassword.MouseState = MaterialSkin.MouseState.HOVER
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtPassword.SelectedText = ""
+        Me.txtPassword.SelectionLength = 0
+        Me.txtPassword.SelectionStart = 0
+        Me.txtPassword.Size = New System.Drawing.Size(291, 23)
+        Me.txtPassword.TabIndex = 2
+        Me.txtPassword.TabStop = False
+        Me.txtPassword.Text = "Cyb3rPatr1ot!"
+        Me.txtPassword.UseSystemPasswordChar = False
         '
         'MaterialLabel1
         '
@@ -115,31 +115,32 @@ Partial Class UserControl1
         Me.MaterialLabel1.TabIndex = 0
         Me.MaterialLabel1.Text = "Available Users"
         '
-        'MaterialMultiLineTextField1
+        'txtScript
         '
-        Me.MaterialMultiLineTextField1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.MaterialMultiLineTextField1.Depth = 0
-        Me.MaterialMultiLineTextField1.Font = New System.Drawing.Font("Roboto", 11.0!)
-        Me.MaterialMultiLineTextField1.ForeColor = System.Drawing.Color.Black
-        Me.MaterialMultiLineTextField1.Hint = ""
-        Me.MaterialMultiLineTextField1.Location = New System.Drawing.Point(378, 91)
-        Me.MaterialMultiLineTextField1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialMultiLineTextField1.Multiline = True
-        Me.MaterialMultiLineTextField1.Name = "MaterialMultiLineTextField1"
-        Me.MaterialMultiLineTextField1.Size = New System.Drawing.Size(254, 428)
-        Me.MaterialMultiLineTextField1.TabIndex = 8
-        Me.MaterialMultiLineTextField1.Text = "Hello " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "world" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "this" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "is " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "a t" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "est"
+        Me.txtScript.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtScript.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtScript.Depth = 0
+        Me.txtScript.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!)
+        Me.txtScript.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtScript.Hint = ""
+        Me.txtScript.Location = New System.Drawing.Point(378, 91)
+        Me.txtScript.MouseState = MaterialSkin.MouseState.HOVER
+        Me.txtScript.Multiline = True
+        Me.txtScript.Name = "txtScript"
+        Me.txtScript.Size = New System.Drawing.Size(254, 428)
+        Me.txtScript.TabIndex = 8
+        Me.txtScript.Text = "Hello " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "world" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "this" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "is " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "a t" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "est"
         '
         'UserControl1
         '
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.White
-        Me.Controls.Add(Me.MaterialMultiLineTextField1)
+        Me.Controls.Add(Me.txtScript)
         Me.Controls.Add(Me.MaterialCheckedListBox1)
         Me.Controls.Add(Me.MaterialRaisedButton2)
         Me.Controls.Add(Me.MaterialRaisedButton1)
         Me.Controls.Add(Me.MaterialLabel2)
-        Me.Controls.Add(Me.MaterialSingleLineTextField1)
+        Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.MaterialLabel1)
         Me.Name = "UserControl1"
         Me.Size = New System.Drawing.Size(686, 627)
@@ -149,10 +150,10 @@ Partial Class UserControl1
     End Sub
 
     Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialSingleLineTextField1 As MaterialSkin.Controls.MaterialSingleLineTextField
+    Friend WithEvents txtPassword As MaterialSkin.Controls.MaterialSingleLineTextField
     Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialCheckedListBox1 As MaterialSkin.Controls.MaterialCheckedListBox
-    Friend WithEvents MaterialMultiLineTextField1 As MaterialSkin.Controls.MaterialMultiLineTextField
+    Friend WithEvents txtScript As MaterialSkin.Controls.MaterialMultiLineTextField
 End Class

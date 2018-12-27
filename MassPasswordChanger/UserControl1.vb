@@ -26,4 +26,17 @@ Public Class UserControl1
     Private Sub CheckedListBoxColorable1_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
+
+    Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
+        txtScript.Text = vbCrLf
+        For i As Integer = 0 To MaterialCheckedListBox1.Items.Count - 1
+            Dim st As CheckState = MaterialCheckedListBox1.GetItemCheckState(i)
+
+            If st = CheckState.Checked Then
+                txtScript.Text = txtScript.Text & "net user " & Chr(34) & MaterialCheckedListBox1.Items(i).ToString & Chr(34) & " " & txtPassword.Text & vbCrLf
+            End If
+        Next
+
+        txtScript.Text = txtScript.Text & "pause" & vbCrLf
+    End Sub
 End Class

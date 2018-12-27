@@ -12,6 +12,9 @@ Public Class UserControl1
         ' CheckedListBoxColorable1.Striped = True
         ' CheckedListBoxColorable1.StripeDarkColor = Drawing.Color.DarkGray
 
+        UserList.Sort()
+        UserList.Reverse()
+
         For Each u As String In UserList
             Dim c As New MaterialCheckBox
             ' c.Checked = True
@@ -26,4 +29,7 @@ Public Class UserControl1
     Private Sub CheckedListBoxColorable1_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
+
 End Class
+
+
