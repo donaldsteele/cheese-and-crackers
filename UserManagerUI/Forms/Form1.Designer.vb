@@ -52,18 +52,7 @@ Partial Class Form1
             tb.Text = item.Name
 
             For Each c As Control In item.Instance.Controls
-
-                Dim btn As Button = TryCast(c, Button)
-                If btn IsNot Nothing Then
-                    btn.BackColor = materialSkinManager.GetDividersColor
-
-                End If
-
-                Dim lbl As Label = TryCast(c, Label)
-                If lbl IsNot Nothing Then
-                    lbl.ForeColor = materialSkinManager.GetPrimaryTextColor
-                    lbl.BackColor = Color.Transparent
-                End If
+                materialSkinManager.UpdateControl(c)
             Next
 
             item.Instance.BackColor = materialSkinManager.GetApplicationBackgroundColor
